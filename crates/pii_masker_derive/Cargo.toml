@@ -1,0 +1,21 @@
+[package]
+name = "pii-masker-derive"
+version = "0.1.0"
+edition = "2021"
+authors = ["Gianluca Brigandi <gbrigand@gmail.com>"]
+description = "A tool to mask PII in source code using AST-based grepping and fake data generation."
+
+[lib]
+proc-macro = true
+
+[dependencies]
+darling = "0.20.8"
+proc-macro2 = "1.0.37"
+quote = "1.0.18"
+syn = { version = "2.0.15", features = ["full", "extra-traits"] }
+pii-masker-inspect.workspace = true
+
+
+
+
+

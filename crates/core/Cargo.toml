@@ -1,0 +1,41 @@
+[package]
+name = "pii-masker"
+version = "0.1.0"
+edition = "2021"
+authors = ["Gianluca Brigandi <gbrigand@gmail.com>"]
+description = "A tool to mask PII in source code using AST-based grepping and fake data generation."
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_yaml = "0.8"
+regex = "1"
+fake = { version = "2.9.2", features = ["derive"] }
+fakeit = "1.2.0"
+ast-grep = "0.22.3"
+ast-grep-core = "0.22.3"
+ast-grep-language = "0.22.3"
+ast-grep-config = "0.22.3"
+tree-sitter-rust = "0.21.2"
+rand = "0.8.5"
+strsim = "0.11.1"
+ordered-float = "4.2.0"
+clap = "4.5.4"
+darling = "0.20.8"
+proc-macro2 = "1.0.37"
+quote = "1.0.18"
+syn = { version = "2.0.15", features = ["full", "extra-traits"] }
+pii-masker-inspect.workspace = true
+pii-masker-pii.workspace = true
+
+[dev-dependencies]
+
+[features]
+default = []
+
+[lib]
+path = "src/lib.rs"
+
+[[bin]]
+name = "pii-masker"
+path = "src/bin/pii-masker.rs"
+

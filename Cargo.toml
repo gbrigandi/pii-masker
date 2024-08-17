@@ -1,0 +1,21 @@
+[workspace]
+members = [
+  "crates/*",
+]
+default-members = ["crates/*"]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+
+[workspace.dependencies]
+pii-masker-pii = { path = "crates/pii", version = "0.1.0" }
+pii-masker-inspect = { path = "crates/inspect", version = "0.1.0" }
+pii-masker-core = { path = "crates/core", version = "0.1.0" }
+pii-masker-derive = { path = "crates/pii_masker_derive", version = "0.1.0" }
+pii-masker-ri = { path = "crates/ri", version = "0.1.0" }
+
+
+
+

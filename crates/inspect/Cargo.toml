@@ -1,0 +1,13 @@
+[package]
+name = "pii-masker-inspect"
+version = "0.1.0"
+edition = "2021"
+authors = ["Gianluca Brigandi <gbrigand@gmail.com>"]
+description = "A tool to mask PII in source code using AST-based grepping and fake data generation."
+
+[dependencies]
+darling = "0.20.8"
+quote = "1.0.18"
+syn = { version = "2.0.15", features = ["full", "extra-traits"] }
+
+

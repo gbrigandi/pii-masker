@@ -1,0 +1,5 @@
+student:
+  first_name: "John"
+  last_name: "Doe"
+  ssn: "123-45-6789"
+  mobile: "310-333-2132"
